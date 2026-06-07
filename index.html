@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student guide to ten careers in environmental science.">
+  <title>Green Futures | Environmental Career Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Green Futures home">
+      <span class="brand-mark">GF</span>
+      <span>Green Futures</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#careers">Careers</a>
+      <a href="#quiz">Find your path</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A student guide to environmental careers</p>
+        <h1>Build a career that helps the <span>planet.</span></h1>
+        <p class="hero-intro">Explore ten ways to turn science, problem-solving, and care for the environment into a real job.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#careers">Explore careers</a>
+          <a class="button secondary" href="#quiz">Take the quick quiz</a>
+        </div>
+        <div class="hero-stats" aria-label="Guide summary">
+          <div><strong>10</strong><span>careers</span></div>
+          <div><strong>3</strong><span>education paths</span></div>
+          <div><strong>100%</strong><span>planet focused</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of environmental career paths">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="planet">
+          <span class="land land-one"></span>
+          <span class="land land-two"></span>
+          <span class="land land-three"></span>
+        </div>
+        <div class="floating-card card-water"><span>≈</span> Clean water</div>
+        <div class="floating-card card-energy"><span>☼</span> Clean energy</div>
+        <div class="floating-card card-wildlife"><span>⌁</span> Wildlife</div>
+      </div>
+    </section>
+
+    <section class="section intro-strip" aria-label="Why environmental careers matter">
+      <p>Environmental careers connect <strong>science</strong>, <strong>people</strong>, and <strong>solutions</strong>. Some jobs happen outdoors, some in labs, and others in offices or communities.</p>
+    </section>
+
+    <section class="section" id="careers">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Career explorer</p>
+          <h2>Find a path that fits you</h2>
+        </div>
+        <p>Use the filters, open a card for details, or select up to three careers to compare.</p>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search careers or skills..." aria-label="Search careers">
+        </label>
+        <div class="filter-group" role="group" aria-label="Filter careers by education">
+          <button class="filter active" data-filter="all">All paths</button>
+          <button class="filter" data-filter="certificate">Certificate</button>
+          <button class="filter" data-filter="bachelor">Bachelor's</button>
+          <button class="filter" data-filter="advanced">Advanced degree</button>
+        </div>
+      </div>
+
+      <div class="career-grid" id="careerGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No careers match that search. Try a broader word.</p>
+    </section>
+
+    <section class="section compare-section" id="compare">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">Side by side</p>
+          <h2>Compare careers</h2>
+        </div>
+        <button class="text-button" id="clearCompare">Clear choices</button>
+      </div>
+      <div class="compare-empty" id="compareEmpty">Choose “Compare” on up to three career cards to see them side by side.</div>
+      <div class="compare-table-wrap" id="compareWrap" hidden>
+        <table id="compareTable"></table>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="quiz-copy">
+        <p class="eyebrow">One-minute career matcher</p>
+        <h2>What kind of environmental work sounds best?</h2>
+        <p>Pick the option that sounds most like you. This is not a scientific test, but it is a useful place to start.</p>
+      </div>
+      <div class="quiz-card">
+        <div id="quizOptions" class="quiz-options">
+          <button data-result="field"><span>01</span><strong>Work outdoors</strong><small>I want nature to be my office.</small></button>
+          <button data-result="lab"><span>02</span><strong>Investigate problems</strong><small>I like data, samples, and experiments.</small></button>
+          <button data-result="build"><span>03</span><strong>Design solutions</strong><small>I want to build cleaner systems.</small></button>
+          <button data-result="people"><span>04</span><strong>Help communities</strong><small>I like planning, teaching, and teamwork.</small></button>
+        </div>
+        <div class="quiz-result" id="quizResult" hidden></div>
+      </div>
+    </section>
+
+    <section class="section sources-section" id="sources">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Research notes</p>
+          <h2>Sources & honest details</h2>
+        </div>
+      </div>
+      <div class="source-grid">
+        <article>
+          <h3>Salary and growth</h3>
+          <p>Salary and job outlook figures are U.S. estimates, mainly from the U.S. Bureau of Labor Statistics Occupational Outlook Handbook. Pay changes by location and experience.</p>
+          <a href="https://www.bls.gov/ooh/" target="_blank" rel="noreferrer">Visit the BLS handbook ↗</a>
+        </article>
+        <article>
+          <h3>Education paths</h3>
+          <p>Example schools are included to show where programs can be found. They are not the only or automatically the best choices. Community colleges and in-state schools can lower costs.</p>
+          <a href="https://www.onetonline.org/find/bright?b=1" target="_blank" rel="noreferrer">Explore O*NET Green Careers ↗</a>
+        </article>
+        <article>
+          <h3>About the quotes</h3>
+          <p>The short quotes are clearly marked composite perspectives. They summarize common comments from people in the field and are not presented as original interviews.</p>
+          <a href="https://www.usajobs.gov/Search/Results?k=environmental" target="_blank" rel="noreferrer">See real job listings ↗</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="careerDialog" class="career-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close career details">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <footer>
+    <div>
+      <span class="brand-mark">GF</span>
+      <strong>Green Futures</strong>
+    </div>
+    <p>Created as a student environmental science career guide.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
